@@ -175,7 +175,7 @@ include('config/config.php');
         <div class="section-full bg-white">
 			<div class="container team-section">
 					<!-- ========== DIRECTOR ========== -->
-				<h2 class="section-title">A. Director</h2>
+				<h2 class="section-title">Director</h2>
 					<div class="team-grid">
 						<?php
 							$name = 'director';
@@ -235,7 +235,7 @@ include('config/config.php');
 						<?php endforeach; ?>
 					</div>
 				<!-- ========== SCIENTISTS ========== -->
-				<h2 class="section-title">B. Scientists</h2>
+				<h2 class="section-title">Scientists</h2>
 					<div class="team-grid">
 						<?php
 							$name = 'scientist';
@@ -294,7 +294,7 @@ include('config/config.php');
 						<?php endforeach; ?>
 					</div>
 				<!-- ========== TECHNICAL STAFF ========== -->
-				<h2 class="section-title">C. Technical Staff </h2>
+				<h2 class="section-title">Technical Staff </h2>
 				<div class="team-grid">
 					<?php
 						$name = 'technical';
@@ -335,7 +335,7 @@ include('config/config.php');
 					<?php endforeach; ?>
 				</div>
 				<!-- ========== MINISTERIAL STAFF ========== -->
-				<h2 class="section-title">D. Ministerial Staff</h2>
+				<h2 class="section-title">Ministerial Staff</h2>
 				<div class="team-grid">
 					<?php
 						$name = 'ministerial';
@@ -380,7 +380,7 @@ include('config/config.php');
 					<?php endforeach; ?>
 				</div>
 				<!-- ========== SUPPORTING STAFF ========== -->
-				<h2 class="section-title">E. Supporting Staff</h2>
+				<h2 class="section-title">Supporting Staff</h2>
 				<div class="team-grid">
 					<?php
 						$name = 'supportive';

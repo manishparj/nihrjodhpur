@@ -1,10 +1,10 @@
 ﻿<?php
-  $conn=mysqli_connect("database","root","icmr@#2022","web_admin1");
+  $conn=mysqli_connect("localhost","root","","web_admin1");
 
 // DB credentials.
-define('DB_HOST','database');
+define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASS','icmr@#2022');
+define('DB_PASS','');
 define('DB_NAME','web_admin1');
 // Establish database connection.
 try

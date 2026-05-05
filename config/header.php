@@ -19,11 +19,6 @@
 
                         <span><a class="f-right px-1" style="font-size: 0.88em;color: #333;" href="screen-reader-help.php">/ Screen Reader Access /</a></span>
                         <span class="f-right border-1">
-                            <!-- <select style="border: 1px solid rgb(74, 74, 74);background-color:transparent;">
-                            <option onchange="if (this.value) window.document.body.style.fontSize=this.value" value="1px" >A+</option>
-                            <option onchange="changemysize(this);" value="16" selected><a href="javascript:void(0);" onclick="changemysize(15);" style="font-size:larger;">A</a></option>
-                            <option onchange="changemysize(this);" value="20" ><a href="javascript:void(0);"  onclick="changemysize(15);" style="font-size:larger;">A-</a></option>
-                        </select> -->
                             <button id="btn1" class="border-0 btn-default " style="color:#000 ;">A+</button> &nbsp;
                             <button id="btn2" class="border-0 btn-default" style="color:#000 ;">A</button> &nbsp;
                             <button id="btn3" class="border-0 btn-default" style="color:#000 ;">A-</button> &nbsp;
@@ -38,18 +33,12 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-4 text-right">
-                        <a href="index.php"><img src="assets/img/logo/logo3.jpg" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/nihrlogo.png" alt=""></a>
                     </div>
-                    <div class="col-5 text-right">
-                        <h4 class="text-right font-weight-bold" style="color:#003679 ;">राष्ट्रीय असंचारी रोग कार्यान्वयन अनुसंधान संस्थान,
-                            जोधपुर<br></h4>
-                        <h6 class="text-right" style="font-size:0.9rem!important">National Institute for Implementation Research on
-                            Non-Communicable Diseases, Jodhpur</h6>
-                    </div>
-                    <div class="col-3">
-                        <img src="assets/img/logo/logo75.png" alt="amrit-mahautshav" style="height:80px;">
-                        <img src="assets/img/logo/g20-2023-india-logo.png" alt="g20-2023-india-logo" style="height:80px;"/>
-
+                   <div class="col-6 text-right d-flex flex-column justify-content-center">
+                        <h4 class="text-right font-weight-bold" style="color:#003679 ;letter-spacing: 3px;
+    font-size: 1.8rem;">राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान, जोधपुर<br></h4>
+                        <h6 class="text-right font-weight-bold" style="font-size:1.6rem!important;letter-spacing: 3px;">National Institute of Health Research, Jodhpur</h6>
                     </div>
                 </div>
             </div>
@@ -81,7 +70,7 @@
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="#">About Us</a>
                                     <ul class="dropdown" style="width: 350px;">
-                                            <li><a href="about-niirncd.php">ICMR-NIIRNCD</a></li>
+                                            <li><a href="about-nihr.php">ICMR-NIHR, Jodhpur</a></li>
                                             <li><a href="dgicmr.php">Director General ICMR</a></li>
                                             <!-- <li><a href="aspaintalchair.php">Dr. A. S. Paintal Distinguished Scientist Chair</a></li> -->
                                             <li><a href="about-director.php">Director profile</a></li>
@@ -134,7 +123,7 @@
 
                         <!-- Contact -->
                         <div class="contact">
-                            <a href="#">ICMR-NIIRNCD Jodhpur</a>
+                            <a href="#">ICMR-NIHR Jodhpur</a>
                         </div>
                     </nav>
                 </div>
