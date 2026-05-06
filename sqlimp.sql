@@ -59,3 +59,49 @@ CREATE TABLE IF NOT EXISTS employees_directory (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )
+
+-- Table for RTI records (CPIO and FAA data)
+CREATE TABLE IF NOT EXISTS rti_officers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    subject_matter VARCHAR(255) NOT NULL,
+    
+    -- CPIO Details
+    cpio_name VARCHAR(255) NOT NULL,
+    cpio_designation VARCHAR(255) NOT NULL,
+    cpio_email VARCHAR(255) NOT NULL,
+    cpio_phone VARCHAR(50) NOT NULL,
+    
+    -- FAA Details
+    faa_name VARCHAR(255) NOT NULL,
+    faa_designation VARCHAR(255) NOT NULL,
+    faa_email VARCHAR(255) NOT NULL,
+    faa_phone VARCHAR(50) NOT NULL,
+    
+    display_order INT DEFAULT 0,
+    status TINYINT DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Table for Nodal Officer
+CREATE TABLE IF NOT EXISTS rti_nodal_officer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    designation VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Table for RTI Documents
+CREATE TABLE IF NOT EXISTS rti_documents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    document_type ENUM('english_act', 'hindi_act', 'office_order') NOT NULL,
+    file_path VARCHAR(500) NOT NULL,
+    original_filename VARCHAR(255) NOT NULL,
+    file_size INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

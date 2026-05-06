@@ -130,6 +130,32 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDirectory" aria-expanded="true" aria-controls="collapseCommittee">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Directory-Manage</span>
+                </a>
+                <div id="collapseDirectory" class="collapse" aria-labelledby="headingDirectory" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="directory-admin.php">Directory-Manage</a>
+                    </div>
+                </div>
+            </li>
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRTI" aria-expanded="true" aria-controls="collapseCommittee">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>RTI-Manage</span>
+                </a>
+                <div id="collapseRTI" class="collapse" aria-labelledby="headingRTI" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="rti_management.php">RTI-Manage</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePub" aria-expanded="true" aria-controls="collapsePub">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Publications-Manage</span>

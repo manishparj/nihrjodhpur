@@ -255,8 +255,17 @@ include('config/config.php');
                          src="assets/img/about/building.jpg"
                          alt="Card image cap">
 
-                    <p id="bg1" class="card-text text-justify">
-                        The National Institute for Implementation Research on Non Communicable Diseases came into existence on 07th December 2019. The institute is located in Jodhpur and it replaces the erstwhile Desert Medicine Research Centre. The institute has state of the art facility to conduct basic laboratory based research in its microbiology, biochemistry and vector biology laboratories. The institute is acquiring manpower and facilities for strengthening it's capacity for conducting implementation research in non- communicable diseases. At present, the institute has a set of 10 dedicated scientists, 9 technical experts, ably supported by 28 administrative and support staff. The thrust areas of research are cardiovascular diseases, chronic respiratory diseases, environmental health, nutritional disorders, cancers, injury & trauma, mental illnesses including substance abuse, genetic diseases and other non-communicable diseases of public health significance in India. The institute aspires to carry out implementation research in the thrust areas, provide training for capacity building in implementation research in other academic and research institutions, develop behavior change communication materials and models for tackling risk factors of various non communicable diseases. The institute heartily welcomes collaboration with institutions and individuals with interest in augmenting the thrust areas.
+                    <p id="bg1" class="card-text text-justify " style="font-size: larger;">
+                        The National Institute for Health Research (NIHR), located in Jodhpur, was originally established on 27 June 1984 as the Desert Medicine Research Centre (DMRC). It was later renamed the National Institute for Implementation Research on Non-Communicable Diseases (NIIRNCD) on 7 December 2019, and redesignated as NIHR on 29 April 2026.
+                         </p>
+                    <p id="bg1" class="card-text text-justify " style="font-size: larger;">
+                        The Institute houses state-of-the-art facilities for conducting basic laboratory-based research in microbiology, biochemistry, and vector biology. It is also actively strengthening its capacity and workforce to advance implementation research in non-communicable diseases (NCDs).
+                    </p>
+                    <p id="bg1" class="card-text text-justify " style="font-size: larger;">
+                        Currently, NIHR comprises a team of dedicated scientists and technical experts, supported by administrative and operational staff. The Institute’s key focus areas include cardiovascular diseases, chronic respiratory diseases, environmental health, nutritional disorders, cancers, injury and trauma, mental health conditions, including substance use disorders, genetic disorders, and other NCDs of public health significance in India.
+                    </p>
+                    <p id="bg1" class="card-text text-justify " style="font-size: larger;">
+                        NIHR aims to generate high-impact implementation research across these domains, build capacity through specialized training programmes, and develop effective behaviour change communication strategies to address NCD risk factors. The Institute welcomes collaboration with academic and research institutions, as well as individual researchers committed to advancing public health in alignment with national health priorities.
                     </p>
                 </div>
             </div>

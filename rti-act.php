@@ -1,5 +1,26 @@
 <?php
 include('config/config.php');
+
+// Fetch RTI Officers from database
+$query = "SELECT * FROM rti_officers ORDER BY display_order ASC, id ASC";
+$result = mysqli_query($conn, $query);
+$rti_officers = [];
+while ($row = mysqli_fetch_assoc($result)) {
+    $rti_officers[] = $row;
+}
+
+// Fetch Nodal Officer
+$nodal_query = "SELECT * FROM rti_nodal_officer LIMIT 1";
+$nodal_result = mysqli_query($conn, $nodal_query);
+$nodal_officer = mysqli_fetch_assoc($nodal_result);
+
+// Fetch Documents
+$doc_query = "SELECT * FROM rti_documents";
+$doc_result = mysqli_query($conn, $doc_query);
+$documents = [];
+while ($row = mysqli_fetch_assoc($doc_result)) {
+    $documents[$row['document_type']] = $row;
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -76,6 +97,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.document-link {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.document-link:hover {
+    transform: translateX(5px);
+}
 </style>
 
 
@@ -118,150 +148,139 @@ a:hover {
         </div>
         <!-- slider Area End-->
 
-
-
         <section class="rti-section py-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
 
-                <!-- Card Container -->
-                <div class="card shadow-lg border-0 rounded-4">
+                        <!-- Card Container -->
+                        <div class="card shadow-lg border-0 rounded-4">
 
-                    <!-- Header -->
-                    <div class="card-header bg-gradient text-white text-center py-4 rounded-top-4" style="background-color:#134b8a">
-                        <h3 class="mb-0 fw-bold">Right to Information (RTI) Act - 2005</h3>
-                        <p class="mb-0" style="color: #fff;">Designated Authorities & Important Links</p>
-                    </div>
+                            <!-- Header -->
+                            <div class="card-header bg-gradient text-white text-center py-4 rounded-top-4" style="background-color:#134b8a">
+                                <h3 class="mb-0 fw-bold">Right to Information (RTI) Act - 2005</h3>
+                                <p class="mb-0" style="color: #fff;">Designated Authorities & Important Links</p>
+                            </div>
 
-                    <!-- Intro -->
-                    <div class="card-body px-4 py-4">
-                        <p class="text-muted text-justify">
-                            In pursuance of Section 5(1) and Section 19(1) of the Right to Information Act, 2005,
-                            the following officers of ICMR – National Institute for Implementation Research on
-                            Non Communicable Diseases, Jodhpur have been designated as Central Public Information
-                            Officers and Appellate Authorities.
-                        </p>
+                            <!-- Intro -->
+                            <div class="card-body px-4 py-4">
+                                <p class="text-muted text-justify">
+                                    In pursuance of Section 5(1) and Section 19(1) of the Right to Information Act, 2005,
+                                    the following officers of ICMR – National Institute of Health Research, Jodhpur have been designated as Central Public Information
+                                    Officers and Appellate Authorities.
+                                </p>
 
-                        <!-- Table -->
-                        <div class="table-responsive mt-4">
-                            <table class="table rti-table align-middle">
-                                <thead>
-                                    <tr>
-                                        <th style="width:5%">#</th>
-                                        <th style="width:20%">Subject Matter</th>
-                                        <th style="width:50%">Central Public Information Officer (CPIO)</th>
-                                        <th style="width:60%">First Appellate Authority (FAA)</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center fw-bold">1</td>
-                                        <td>Administration Section</td>
-                                        <td>
-                                            <strong>Shri Haresh Jadhav</strong><br>
-                                            <span class="text-muted">Section Officer</span><br>
-                                            📞 0291-2729711<br>
-                                            ✉️ jadhavinrh@icmr.gov.in
-                                        </td>
-                                        <td>
-                                            <strong>Shri Dinesh Soni</strong><br>
-                                            <span class="text-muted">Senior Administrative Officer</span><br>
-                                            📞 9560587733<br>
-                                            ✉️ dinesh.soni.nimr@gov.in
-                                        </td>
-                                    </tr>
+                                <!-- Dynamic Table -->
+                                <div class="table-responsive mt-4">
+                                    <table class="table rti-table align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:5%">#</th>
+                                                <th style="width:20%">Subject Matter</th>
+                                                <th style="width:50%">Central Public Information Officer (CPIO)</th>
+                                                <th style="width:60%">First Appellate Authority (FAA)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php if(empty($rti_officers)): ?>
+                                                <tr>
+                                                    <td colspan="4" class="text-center text-muted py-4">
+                                                        No RTI officers found in the database.
+                                                    </td>
+                                                </tr>
+                                            <?php else: ?>
+                                                <?php $counter = 1; foreach($rti_officers as $officer): ?>
+                                                <tr>
+                                                    <td class="text-center fw-bold"><?php echo $counter++; ?></td>
+                                                    <td>
+                                                        <strong><?php echo htmlspecialchars($officer['subject_matter']); ?></strong>
+                                                    </td>
+                                                    <td>
+                                                        <strong><?php echo htmlspecialchars($officer['cpio_name']); ?></strong><br>
+                                                        <span class="text-muted"><?php echo htmlspecialchars($officer['cpio_designation']); ?></span><br>
+                                                        📞 <?php echo htmlspecialchars($officer['cpio_phone']); ?><br>
+                                                        ✉️ <?php echo htmlspecialchars($officer['cpio_email']); ?>
+                                                    </td>
+                                                    <td>
+                                                        <strong><?php echo htmlspecialchars($officer['faa_name']); ?></strong><br>
+                                                        <span class="text-muted"><?php echo htmlspecialchars($officer['faa_designation']); ?></span><br>
+                                                        📞 <?php echo htmlspecialchars($officer['faa_phone']); ?><br>
+                                                        ✉️ <?php echo htmlspecialchars($officer['faa_email']); ?>
+                                                    </td>
+                                                </tr>
+                                                <?php endforeach; ?>
+                                            <?php endif; ?>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                                    <tr>
-                                        <td class="text-center fw-bold">2</td>
-                                        <td>Accounts Section</td>
-                                        <td>
-                                            <strong>Shri Haresh Jadhav</strong><br>
-                                            <span class="text-muted">Section Officer</span><br>
-                                            📞 0291-2729711<br>
-                                            ✉️ jadhavinrh@icmr.gov.in
-                                        </td>
-                                        <td>
-                                            <strong>Shri Om Prakash</strong><br>
-                                            <span class="text-muted">Account Officer</span><br>
-                                            📞 9810640019<br>
-                                            ✉️ prakashom.hq@icmr.gov.in
-                                        </td>
-                                    </tr>
+                                <!-- Nodal Officer Card -->
+                                <div class="rti-nodal-card p-4 rounded-4 shadow-sm mt-4">
+                                    <h5 class="fw-bold mb-3 text-primary text-center" style="color: #003679 !important;">
+                                        Nodal Officer (RTI) – Coordination & Online Portal
+                                    </h5>
 
-                                    <tr>
-                                        <td class="text-center fw-bold">3</td>
-                                        <td>Scientific Section</td>
-                                        <td>
-                                            <strong>Dr. Ramesh Sangwan</strong><br>
-                                            <span class="text-muted">Scientist-C</span><br>
-                                            📞 0291-2729729<br>
-                                            ✉️ sangwan.rk@icmr.gov.in
-                                        </td>
-                                        <td>
-                                            <strong>Dr. P.K. Anand</strong><br>
-                                            <span class="text-muted">Scientist-F</span><br>
-                                            📞 9251501461<br>
-                                            ✉️ pk.anand@dmrcjodhpur.nic.in
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                    <div class="row g-4">
+                                        <div class="col-md-6">
+                                            <div class="p-3 bg-light rounded-3 h-100">
+                                                <?php if($nodal_officer): ?>
+                                                    <strong><?php echo htmlspecialchars($nodal_officer['name']); ?></strong><br>
+                                                    <span class="text-muted"><?php echo htmlspecialchars($nodal_officer['designation']); ?></span><br><br>
+                                                    📞 <?php echo htmlspecialchars($nodal_officer['phone']); ?><br>
+                                                    ✉️ <?php echo htmlspecialchars($nodal_officer['email']); ?>
+                                                <?php else: ?>
+                                                    <p class="text-muted">Nodal officer information not available.</p>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
 
-                        <!-- Nodal Officer Card -->
-                        <div class="rti-nodal-card p-4 rounded-4 shadow-sm">
-                            <h5 class="fw-bold mb-3 text-primary text-center" style="color: #003679 !important;">
-                                Nodal Officer (RTI) – Coordination & Online Portal
-                            </h5>
-
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-light rounded-3 h-100">
-                                        <strong>Shri Haresh Jadhav</strong><br>
-                                        <span class="text-muted">Section Officer</span><br><br>
-                                        📞 0291-2729711<br>
-                                        ✉️ jadhavnirrh@icmr.gov.in
+                                        <!-- RTI Links -->
+                                        <div class="col-md-6">
+    <div class="p-3 bg-light rounded-3 h-100">
+        <strong>RTI Documents</strong>
+        <ul class="list-unstyled mt-3">
+            <?php if(isset($documents['english_act']) && !empty($documents['english_act'])): ?>
+                <li class="mb-2 document-link">
+                    <a href="admin/<?php echo htmlspecialchars($documents['english_act']['file_path']); ?>" target="_blank">
+                        📄 <?php echo htmlspecialchars($documents['english_act']['title']); ?>
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="mb-2 text-muted">📄 English Version (Not available)</li>
+            <?php endif; ?>
+            
+            <?php if(isset($documents['hindi_act']) && !empty($documents['hindi_act'])): ?>
+                <li class="mb-2 document-link">
+                    <a href="admin/<?php echo htmlspecialchars($documents['hindi_act']['file_path']); ?>" target="_blank">
+                        📄 <?php echo htmlspecialchars($documents['hindi_act']['title']); ?>
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="mb-2 text-muted">📄 Hindi Version (Not available)</li>
+            <?php endif; ?>
+            
+            <?php if(isset($documents['office_order']) && !empty($documents['office_order'])): ?>
+                <li class="mb-2 document-link">
+                    <a href="admin/<?php echo htmlspecialchars($documents['office_order']['file_path']); ?>" target="_blank">
+                        📄 <?php echo htmlspecialchars($documents['office_order']['title']); ?>
+                    </a>
+                </li>
+            <?php else: ?>
+                <li class="mb-2 text-muted">📄 RTI Office Order (Not available)</li>
+            <?php endif; ?>
+        </ul>
+    </div>
+</div>
                                     </div>
                                 </div>
 
-                                <!-- RTI Links -->
-                                <div class="col-md-6">
-                                    <div class="p-3 bg-light rounded-3 h-100">
-                                        <strong>RTI Documents</strong>
-                                        <ul class="list-unstyled mt-3">
-                                            <li class="mb-2">
-                                                <a href="./doc/RTI-Act-2005-Eng.pdf" target="_blank">
-                                                    📄 English Version
-                                                </a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="./doc/RTI-Act-2005-Hindi.pdf" target="_blank">
-                                                    📄 Hindi Version
-                                                </a>
-                                            </li>
-                                            <li class="mb-2">
-                                                <a href="./doc/Final-RTI.pdf" target="_blank">
-                                                    📄 RTI Office Order
-                                                </a>
-                                            </li>
-                                            
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
-</section>
-
-
-
+        </section>
 
     </main>
     <footer>
@@ -317,25 +336,23 @@ a:hover {
     <script src="./assets/datatables/dataTables.bootstrap4.min.js"></script>
 
     <script>
-		$(document).ready(function() {
-			$('#btn1').click(function() {
-				$(".table").css("fontSize", "18px");
+        $(document).ready(function() {
+            $('#btn1').click(function() {
+                $(".table").css("fontSize", "18px");
                 $(".card-text").css("fontSize", "18px");
-			});
+            });
 
             $('#btn2').click(function() {
-				$(".table").css("fontSize", "16px");
+                $(".table").css("fontSize", "16px");
                 $(".card-text").css("fontSize", "16px");
-			});
+            });
 
-			$('#btn3').click(function() {
-				$(".table").css("fontSize", "13px");
+            $('#btn3').click(function() {
+                $(".table").css("fontSize", "13px");
                 $(".card-text").css("fontSize", "13px");
-			});
-
-
-		});
-	</script>
+            });
+        });
+    </script>
 </body>
 
 </html>
