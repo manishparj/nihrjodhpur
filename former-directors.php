@@ -69,7 +69,7 @@ try {
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Former Directors</h2>
+                                <h2>Former Directors / In-Charges</h2>
                             </div>
                         </div>
                     </div>
@@ -119,9 +119,10 @@ try {
                                                     <i class="fas fa-calendar-alt"></i>
                                                 </div>
                                                 <div class="service-dates">
-                                                    <strong>From:</strong> <?php echo date('d-m-Y', strtotime($director['service_from'])); ?>
-                                                    &nbsp;&nbsp;
-                                                    <strong>To:</strong> <?php echo $director['service_to'] ? date('d-m-Y', strtotime($director['service_to'])) : 'Present'; ?>
+                                                    <strong> <?php echo date('d/m/Y', strtotime($director['service_from'])); ?>
+                                                    &nbsp;-&nbsp;
+                                                    <?php echo $director['service_to'] ? date('d/m/Y', strtotime($director['service_to'])) : 'Present'; ?>
+                                                    </strong>
                                                 </div>
                                             </div>
                                         </div>
@@ -159,9 +160,8 @@ try {
                                                     <i class="fas fa-calendar-alt"></i>
                                                 </div>
                                                 <div class="service-dates">
-                                                    <strong>From:</strong> <?php echo date('d-m-Y', strtotime($director['service_from'])); ?>
-                                                    &nbsp;&nbsp;
-                                                    <strong>To:</strong> <?php echo $director['service_to'] ? date('d-m-Y', strtotime($director['service_to'])) : 'Present'; ?>
+                                                    <strong>From:<?php echo date('d/m/Y', strtotime($director['service_from'])); ?>
+                                                    &nbsp;-&nbsp;<?php echo $director['service_to'] ? date('d/m/Y', strtotime($director['service_to'])) : 'Present'; ?></strong> 
                                                 </div>
 </div>
                                         </div>

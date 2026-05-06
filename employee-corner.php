@@ -6,7 +6,7 @@ include('config/config.php');
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Employee Corner | ICMR-NIIRNCD </title>
+        <title>Employee Corner | ICMR-NIHR </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -229,54 +229,53 @@ include('config/config.php');
         <!-- slider Area End-->
                 <div class="tile-grid">
                 <!-- First row: 4 tiles -->
-                <a href="https://icmr.eoffice.gov.in" class="tile" target="_blank">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/desktop.svg" alt="eOffice">
-                <h5>eOffice</h5>
-                </a>
+                    <a href="https://icmr.eoffice.gov.in" class="tile" target="_blank">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/desktop.svg" alt="eOffice">
+                    <h5>eOffice</h5>
+                    </a>
 
 
-                <a href="https://www.niirncd.org/salary_slip" class="tile" target="_blank">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/file-invoice-dollar.svg" alt="Salary Slip">
-                <h5>eSalary Slip Generation</h5>
-                </a>
+                    <a href="https://www.niirncd.org/salary_slip" class="tile" target="_blank">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/file-invoice-dollar.svg" alt="Salary Slip">
+                    <h5>eSalary Slip Generation</h5>
+                    </a>
 
 
-                <a href="https://www.niirncd.org/esalary" class="tile" target="_blank">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/database.svg" alt="eSalary Software">
-                <h5>eSalary Software</h5>
-                </a>
+                    <a href="https://www.niirncd.org/esalary" class="tile" target="_blank">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/database.svg" alt="eSalary Software">
+                    <h5>eSalary Software</h5>
+                    </a>
 
-                <a href="https://email.gov.in/" class="tile" target="_blank">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/at.svg" alt="Old Gov email">
-                <h5>Old Gov Email</h5>
-                </a>
-
-               
                 </div>
 
 
                 <div class="tile-grid">
                 <!-- Second row: 3 tiles -->
-                  <a href="https://mail.gov.in/" class="tile" target="_blank">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/at.svg" alt="New Gov email">
-                <h5>New Gov Email</h5>
-                </a>
-                <a href="./sci-admin/" class="tile">
-                <img src="admin/vendor/fontawesome-free/svgs/brands/edge.svg" alt="Scientists Panel">
-                <h5>Scientists Panel</h5>
-                </a>
+                    <a href="https://mail.gov.in/" class="tile" target="_blank">
+                        <img src="admin/vendor/fontawesome-free/svgs/solid/at.svg" alt="New Gov email">
+                        <h5>New Gov Email</h5>
+                        </a>
+                    <a href="./sci-admin/" class="tile">
+                    <img src="admin/vendor/fontawesome-free/svgs/brands/edge.svg" alt="Scientists Panel">
+                    <h5>Scientists Panel</h5>
+                    </a>
 
 
-                <a href="viewform.php" class="tile">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/list.svg" alt="Forms">
-                <h5>Forms</h5>
-                </a>
+                    <a href="viewform.php" class="tile">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/list.svg" alt="Forms">
+                    <h5>Forms</h5>
+                    </a>
 
 
-                <a href="viewcircular.php" class="tile">
-                <img src="admin/vendor/fontawesome-free/svgs/solid/list.svg" alt="Circular">
-                <h5>Circular</h5>
-                </a>
+                    <a href="viewcircular.php" class="tile">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/list.svg" alt="Circular">
+                    <h5>Circular</h5>
+                    </a>
+
+                    <a href="https://niirncd.org/vehicle_app/" class="tile" target="_blank">
+                    <img src="admin/vendor/fontawesome-free/svgs/solid/car.svg" alt="Circular">
+                    <h5>Vehicle Application</h5>
+                    </a>
                 </div>
     </main>
    <footer>
