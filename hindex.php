@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ICMR-NIIRNCD </title>
+    <title>ICMR-NIHR Jodhpur</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,8 +85,7 @@
                             }
                         }
                     ?>
-              
-
+             
             </div>
         </div>
         <!-- ##### Hero Area End ##### -->
@@ -173,9 +172,11 @@
                 </div>
                     <div class="col-xl-8 col-lg-8 col-md-8">
                             <div class="shadow p-3 mb-5 bg-white rounded" style="border: 1px solid rgba(0,0,0,0.15);">
-                            <h3 class="text-center" style="color: rgba(1,63,138,1);margin-bottom: 5px;font-size: 26px;font-weight: 550;line-height: 1.8;">आई.सी.एम.आर.-राष्ट्रीय असंचारी रोग कार्यान्वयन अनुसंधान संस्थान, जोधपुर में आपका स्वागत है</h3>
+                            <h3 class="text-center" style="color: rgba(1,63,138,1);margin-bottom: 5px;font-size: 26px;font-weight: 550;line-height: 1.8;">आई.सी.एम.आर.-राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान, जोधपुर में आपका स्वागत है</h3>
                            <img style="margin-bottom: 27px;" src="assets/img/icon/line.png">
-                           <p class="card-text text-justify" style="margin-bottom: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">राष्ट्रीय असंचारी रोग कार्यान्वयन अनुसंधान संस्थान 7 दिसंबर 2019 को अस्तित्व में आया। यह संस्थान जोधपुर में स्थित है और इसका पूर्ववर्ती नाम “मरुस्थलीय आयुर्विज्ञान अनुसंधान केंद्र” था। संस्थान के पास सूक्ष्म जीव विज्ञान, जैव रसायन और वेक्टर जीव विज्ञान प्रयोगशालाओं में बुनियादी प्रयोगशाला आधारित अनुसंधान करने के लिए अत्याधुनिक सुविधा है।...</p>
+                           <p class="card-text text-justify" style="margin-bottom: 20px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान (NIHR), जोधपुर में स्थित, मूल रूप से 27 जून 1984 को डेजर्ट मेडिसिन रिसर्च सेंटर (DMRC) के रूप में स्थापित किया गया था। बाद में 7 दिसंबर 2019 को इसका नाम बदलकर नेशनल इंस्टीट्यूट फॉर इम्प्लीमेंटेशन रिसर्च ऑन नॉन-कम्युनिकेबल डिज़ीज़ेज़ (NIIRNCD) कर दिया गया तथा 29 अप्रैल 2026 को इसे पुनः नामित कर राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान (NIHR) किया गया।
+
+संस्थान में माइक्रोबायोलॉजी, बायोकेमिस्ट्री ...</p>
                             <a class="genric-btn success" href="habout-niirncd.php" style="width: 100%;background-color: #003679;">अधिक पढ़ें... »  </a>
                         </div>
                     </div>
@@ -295,8 +296,8 @@
 
 
         <section class="border">
-           <div class="container">
-            <!-- <div class="col-12 text-center">
+            <div class="container">
+                <!-- <div class="col-12 text-center">
                 <h2 class="font-weight-bold">Our Collaborators</h2>
                 </div> -->
 
@@ -335,7 +336,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                <a href="hindex.php"><img src="assets/img/logo/logo3.jpg" alt="" width="200px" style="border: 1px solid #fff;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/nihrlogo.png" alt="" width="200px" style="border: 1px solid #fff;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <!-- <div class="footer-pera">
@@ -344,10 +345,10 @@
                                 </div>
                                 <!-- social -->
                                 <div class="footer-social ml-2">
-                                  <a href="https://www.facebook.com/niirncdjodhpur"><i class="fa fa-facebook"></i></a>
-                                  <a href="https://twitter.com/niirncdjodhpur"><i class="fa fa-twitter"></i></a>
-                                  <a href="https://www.youtube.com/channel/UCHOjVSWGvInASMI46UVHJxg"><i class="fa fa-youtube"></i></a>
-                                  <a href="https://www.instagram.com/niirncd.jodhpur/"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/nihrjodhpur"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://x.com/nihrjodhpur"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/nihrjodhpur/"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/nihrjodhpur"><i class="fa fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -380,7 +381,7 @@
 
                                 <ul>
                                     <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="habout-niirncd.php">हमारे बारे में</a></span></li>
-                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="hteam.php">हमारी टीम</a></span></li>
+                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="hour-team.php">हमारी टीम</a></span></li>
                                     <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="hrecruitment.php">रिक्तियां</a></span></li>
                                     <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="hemployee-corner.php">कर्मचारी भाग</a></span></li>
                                 </ul>

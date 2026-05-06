@@ -6,8 +6,6 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 justify-content-between px-1" style="line-height: 25px;">
 
-
-
                         <!-- top-bar Area -->
 
                         <a class="px-1 f-left" style="font-size: 0.88em;color: #333;" href="hindex.php">Home /</a>
@@ -22,10 +20,9 @@
 
                             </select></span>
 
-
                         <span><a class="f-right px-1" style="font-size: 0.88em;color: #333;" href="screen-reader-help.php">/ Screen Reader Access /</a></span>
                         <span class="f-right border-1">
-                        <button id="btn1" class="border-0 btn-default " style="color:#000 ;">A+</button> &nbsp;
+                            <button id="btn1" class="border-0 btn-default " style="color:#000 ;">A+</button> &nbsp;
                             <button id="btn2" class="border-0 btn-default" style="color:#000 ;">A</button> &nbsp;
                             <button id="btn3" class="border-0 btn-default" style="color:#000 ;">A-</button> &nbsp;
 
@@ -37,20 +34,14 @@
 
         <div class="mid-header-area">
             <div class="container-fluid">
-                <div class="row align-middle">
+                <div class="row">
                     <div class="col-4 text-right">
-                        <a href="hindex.php"><img src="assets/img/logo/logo3.jpg" alt=""></a>
+                        <a href="index.php"><img src="assets/img/logo/nihrlogo.png" alt=""></a>
                     </div>
-                    <div class="col-5 text-right">
-                        <h4 class="text-right font-weight-bold" style="color:#003679 ;">राष्ट्रीय असंचारी रोग कार्यान्वयन अनुसंधान संस्थान,
-                            जोधपुर<br></h4>
-                        <h6 class="text-right" style="font-size:0.9rem!important">National Institute for Implementation Research on
-                            Non-Communicable Diseases, Jodhpur</h6>
-                    </div>
-                    <div class="col-3">
-                        <img src="assets/img/logo/logo75.png" alt="" style="height:80px ;">
-                        <img src="assets/img/logo/g20-2023-india-logo.png" alt="g20-2023-india-logo" style="height:80px;"/>
-
+                   <div class="col-6 text-right d-flex flex-column justify-content-center">
+                        <h4 class="text-right font-weight-bold" style="color:#003679 ;letter-spacing: 3px;
+    font-size: 1.8rem;">राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान, जोधपुर<br></h4>
+                        <h6 class="text-right font-weight-bold" style="font-size:1.6rem!important;letter-spacing: 3px;">National Institute of Health Research, Jodhpur</h6>
                     </div>
                 </div>
             </div>
@@ -77,17 +68,22 @@
                             </div>
 
                             <!-- Nav Start -->
-                            <div class="classynav" style="font-size: 0.8rem;">
+                            <div class="classynav">
                                 <ul>
                                     <li><a href="hindex.php">मुखपृष्ठ</a></li>
                                     <li><a href="#">हमारे बारे में</a>
                                         <ul class="dropdown" style="width: 350px;">
-                                            <li><a href="habout-niirncd.php">ICMR-NIIRNCD के बारे में</a></li>
+                                            <li><a href="habout-nihr.php">ICMR-NIHR के बारे में</a></li>
                                             <li><a href="hdgicmr.php">महानिदेशक ICMR के बारे में </a></li>
                                             <!-- <li><a href="haspaintalchair.php">Dr. A. S. Paintal Distinguished Scientist Chair</a></li> -->
                                             <li><a href="habout-director.php">निदेशक के बारे में</a></li>
                                             <li><a href="habout-mrhrubk.php">क्षेत्र इकाई</a></li>
                                             <li><a href="hour-team.php">हमारी टीम</a></li>
+                                            <li><a href="organogram.php">हमारा ऑर्गनोग्राम</a></li>
+                                            <li><a href="committee.php">हमारी समिति</a></li>
+                                            <li><a href="leadership.php">नेतृत्व से मिलें</a></li>
+                                            <li><a href="former-directors.php">
+पूर्व निदेशक</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">अनुसंधान</a>
@@ -105,21 +101,26 @@
                                     </li>
                                     <li><a href="hevents.php">कार्यक्रम</a>
                                     </li>
-                                    <li><a href="#">सम्बंधित बंध</a>
+                                    <li><a href="#">मीडिया</a>
+                                    <ul class="dropdown" style="width: 180px;">
+                                            <li><a href="photogallery.php">फोटो गैलरी</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Links</a>
                                     <ul class="dropdown" style="width: 350px;">
                                              <li><a href="http://www.icmr.gov.in/">भारतीय आयुर्विज्ञान अनुसंधान परिषद&nbsp;<i class="fa fa-external-link"></i></a></li>
                                             <li><a href="http://www.dhr.gov.in/">स्वास्थ्य अनुसंधान विभाग &nbsp;<i class="fa fa-external-link"></i></a></li>
                                             <li><a href="https://www.mohfw.gov.in/">स्वास्थ्य और परिवार कल्याण विभाग&nbsp;<i class="fa fa-external-link"></i></a></li>
+                                            <li><a href="calendar.php">कैलेंडर 2026</a></li>
 
                                         </ul>
                                     </li>
-                                    <li><a href="#">मीडिया</a>
+                                    <li><a href="#">संपर्क</a>
                                     <ul class="dropdown" style="width: 180px;">
-                                            <li><a href="hphotogallery.php">फोटो गैलरी</a></li>
-                                            <li><a href="#">विडियो गैलरी</a></li>
+                                            <li><a href="Hcontact.php">संपर्क</a></li>
+                                            <li><a href="directory.php">स्टाफ़ निदेशिका</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="hcontact.php">संपर्क</a></li>
                                 </ul>
                             </div>
                             <!-- Nav End -->

@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ICMR-NIIRNCD Jodhpur</title>
+    <title>ICMR-NIHR Jodhpur</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -177,9 +177,9 @@
                     </div>
                     <div class="col-xl-8 col-lg-8 col-md-8">
                         <div class="shadow p-3 mb-5 bg-white rounded">
-                            <h3 class="card-title text-center font-weight-bold" style="color: #012f5f;">Welcome to ICMR-National Institute for Implementation Research on Non Communicable Diseases, Jodhpur</h3>
+                            <h3 class="card-title text-center font-weight-bold" style="color: #012f5f;">Welcome to ICMR-National Institute of Health Research, Jodhpur</h3>
                             <img src="assets/img/icon/line.png" />
-                            <p class="card-text text-justify" id="bg2">The National Institute for Implementation Research on Non Communicable Diseases came into existence on 07<SUP>th</SUP> December, 2019. The institute is located in Jodhpur and it replaces the erstwhile Desert Medicine Research Centre. The institute has state of the art facility to conduct basic laboratory based research in its microbiology, biochemistry and vector biology laboratories...</p>
+                            <p class="card-text text-justify" id="bg2">The National Institute for Health Research (NIHR), located in Jodhpur, was originally established on 27 June 1984 as the Desert Medicine Research Centre (DMRC). It was later renamed the National Institute for Implementation Research on Non-Communicable Diseases (NIIRNCD) on 7 December 2019, and redesignated as NIHR on 29 April 2026.The Institute houses state-of-the-art facilities for conducting basic laboratory-based....</p>
                             <a class="genric-btn success" href="about-niirncd.php" style="width: 100%;background-color: #003679;">See More » </a>
                         </div>
                     </div>
@@ -331,7 +331,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.php"><img src="assets/img/logo/logo3.jpg" alt="" width="200px" style="border: 1px solid #fff;"></a>
+                                    <a href="index.php"><img src="assets/img/logo/nihrlogo.png" alt="" width="200px" style="border: 1px solid #fff;"></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <!-- <div class="footer-pera">
@@ -340,10 +340,10 @@
                                 </div>
                                 <!-- social -->
                                 <div class="footer-social ml-2">
-                                    <a href="https://www.facebook.com/niirncdjodhpur"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://twitter.com/niirncdjodhpur"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCHOjVSWGvInASMI46UVHJxg"><i class="fa fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/niirncd.jodhpur/"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/nihrjodhpur"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://x.com/nihrjodhpur"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/nihrjodhpur/"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/nihrjodhpur"><i class="fa fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -375,8 +375,8 @@
                                 <div class="line"></div>
 
                                 <ul>
-                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="about-niirncd.php">About Us</a></span></li>
-                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="team.php">Our team</a></span></li>
+                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="about-nihr.php">About Us</a></span></li>
+                                    <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="our-team.php">Our team</a></span></li>
                                     <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="recruitment.php">Career</a></span></li>
                                     <li><span><i class="fa fa-angle-right"></i>&nbsp;<a href="employee-corner.php">Employee corner</a></span></li>
 
