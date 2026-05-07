@@ -29,16 +29,22 @@
             </div>
         </div>
 
-        <div class="mid-header-area">
+        <div class="mid-header-area" style="margin: 10px 0px 5px 0px;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-4 text-right">
                         <a href="index.php"><img src="assets/img/logo/nihrlogo.png" alt=""></a>
                     </div>
                    <div class="col-6 text-right d-flex flex-column justify-content-center">
-                        <h4 class="text-right font-weight-bold" style="color:#003679 ;letter-spacing: 3px;
-    font-size: 1.8rem;">राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान, जोधपुर<br></h4>
-                        <h6 class="text-right font-weight-bold" style="font-size:1.6rem!important;letter-spacing: 3px;">National Institute of Health Research, Jodhpur</h6>
+                        <h4 class="text-right font-weight-bold" style="color:#003679 ;
+                            font-size: 1.8rem;">राष्ट्रीय स्वास्थ्य अनुसंधान संस्थान, जोधपुर<br></h4>
+                            <h4 class="text-right font-weight-bold" style="color:#003679 ;
+                            font-size: 1rem;">स्वास्थ्य अनुसंधान विभाग, स्वास्थ्य एवं परिवार कल्याण मंत्रालय, भारत सरकार<br></h4>
+    
+                        <h6 class="text-right font-weight-bold" style="font-size:1.6rem!important;">National Institute of Health Research, Jodhpur</h6>
+                        <h6 class="text-right font-weight-bold" style="font-size:1rem!important;">
+                        Department of Health Research, Ministry of Health and Family Welfare, Government of India</h6>
+
                     </div>
                 </div>
             </div>
@@ -100,6 +106,7 @@
                                     <li><a href="#">Media</a>
                                     <ul class="dropdown" style="width: 180px;">
                                             <li><a href="photogallery.php">Photo Gallery</a></li>
+                                            <li><a href="nihrnews.php">NIHR in News</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Links</a>

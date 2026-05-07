@@ -142,6 +142,19 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNews" aria-expanded="true" aria-controls="collapseCommittee">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>News Paper-Manage</span>
+                </a>
+                <div id="collapseNews" class="collapse" aria-labelledby="headingNews" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="news-admin.php">News Paper-Manage</a>
+                    </div>
+                </div>
+            </li>
+
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRTI" aria-expanded="true" aria-controls="collapseCommittee">
                     <i class="fas fa-fw fa-folder"></i>

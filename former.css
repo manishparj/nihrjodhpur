@@ -142,7 +142,7 @@
             font-size: 1.4rem;
             font-weight: 700;
             color: #333;
-            margin-bottom: 10px;
+            margin: 10px;
         }
         
         .current-badge {
@@ -174,8 +174,8 @@
         }
 
         .service-dates {
-            color: #666;
-            font-size: 0.9rem;
+            color: #fff;
+            font-size: 1.2rem;
             margin-top: 0; /* remove top margin */
         }
         

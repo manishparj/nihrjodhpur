@@ -107,17 +107,14 @@ try {
                                                 </div>
                                             <?php endif; ?>
                                         </div>
-                                        <div class="card-content">
+                                        <div class="card-content" style="padding: 0px;">
                                             <div class="director-name">
                                                 <?php echo htmlspecialchars($director['name']); ?>
                                                 <?php if(!$director['service_to']): ?>
                                                     <span class="current-badge">Current Director</span>
                                                 <?php endif; ?>
                                             </div>
-                                            <div class="service-period-container">
-                                                <div class="service-period">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </div>
+                                            <div style="background-color: #003679;">
                                                 <div class="service-dates">
                                                     <strong> <?php echo date('d/m/Y', strtotime($director['service_from'])); ?>
                                                     &nbsp;-&nbsp;
@@ -148,20 +145,16 @@ try {
                                                 </div>
                                             <?php endif; ?>
                                         </div>
-                                        <div class="card-content">
+                                        <div class="card-content" style="padding: 0px;">
                                             <div class="director-name">
                                                 <?php echo htmlspecialchars($director['name']); ?>
                                                 <?php if(!$director['service_to']): ?>
                                                     <span class="current-badge">Current Director</span>
                                                 <?php endif; ?>
                                             </div>
-                                           <div class="service-period-container">
-                                                <div class="service-period">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </div>
+                                           <div style="background-color: #003679;">
                                                 <div class="service-dates">
-                                                    <strong>From:<?php echo date('d/m/Y', strtotime($director['service_from'])); ?>
-                                                    &nbsp;-&nbsp;<?php echo $director['service_to'] ? date('d/m/Y', strtotime($director['service_to'])) : 'Present'; ?></strong> 
+                                                    <strong><?php echo date('d/m/Y', strtotime($director['service_from'])); ?> &nbsp; - &nbsp;<?php echo $director['service_to'] ? date('d/m/Y', strtotime($director['service_to'])) : 'Present'; ?></strong> 
                                                 </div>
 </div>
                                         </div>
