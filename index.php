@@ -28,6 +28,116 @@
     <link rel="stylesheet" href="./assets/css/nice-select.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./stylenav.css">
+    <style>
+
+.custom-modal-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.custom-modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-modal-box{
+    background: #fff;
+    width: 90%;
+    max-width: 700px;
+
+    border-radius: 10px;
+    padding: 25px;
+
+    position: relative;
+
+    max-height: 85vh;
+    overflow-y: auto;
+
+    animation: modalAnimation 0.4s ease;
+}
+
+@keyframes modalAnimation{
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.custom-modal-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 30px;
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.custom-modal-header h2{
+    margin-bottom: 15px;
+    color: #003679;
+    font-size: 28px;
+}
+
+.custom-modal-body{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.custom-modal-body img{
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-modal-footer{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.custom-modal-footer button{
+    background: #003679;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+
+@media(max-width:768px){
+
+    .custom-modal-box{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .custom-modal-header h2{
+        font-size: 22px;
+    }
+}
+
+</style>
 
 
 </head>
@@ -180,7 +290,7 @@
                             <h3 class="card-title text-center font-weight-bold" style="color: #012f5f;">Welcome to ICMR-National Institute of Health Research, Jodhpur</h3>
                             <img src="assets/img/icon/line.png" />
                             <p class="card-text text-justify" id="bg2">The National Institute for Health Research (NIHR), located in Jodhpur, was originally established on 27 June 1984 as the Desert Medicine Research Centre (DMRC). It was later renamed the National Institute for Implementation Research on Non-Communicable Diseases (NIIRNCD) on 7 December 2019, and redesignated as NIHR on 29 April 2026.The Institute houses state-of-the-art facilities for conducting basic laboratory-based....</p>
-                            <a class="genric-btn success" href="about-niirncd.php" style="width: 100%;background-color: #003679;">See More » </a>
+                            <a class="genric-btn success" href="about-nihr.php" style="width: 100%;background-color: #003679;">See More » </a>
                         </div>
                     </div>
 
@@ -397,6 +507,109 @@
         });
     </script>
 
+
+
+<script>
+
+window.addEventListener("load", function () {
+
+    // wait 5 seconds AFTER full page load
+    setTimeout(function () {
+
+        const modal = document.getElementById("customModalOverlay");
+
+        if(modal){
+
+            // show modal
+            modal.classList.add("active");
+
+            // disable body scroll
+            document.body.classList.add("modal-open");
+
+            const closeBtn = document.getElementById("modalCloseBtn");
+            const footerBtn = document.getElementById("modalFooterBtn");
+
+            // close function
+            function closeModal(){
+
+                modal.classList.remove("active");
+                document.body.classList.remove("modal-open");
+
+            }
+
+            // close button
+            if(closeBtn){
+                closeBtn.onclick = closeModal;
+            }
+
+            // footer button
+            if(footerBtn){
+                footerBtn.onclick = closeModal;
+            }
+
+            // outside click
+            modal.onclick = function(e){
+
+                if(e.target === modal){
+                    closeModal();
+                }
+
+            };
+
+            // ESC key
+            document.addEventListener("keydown", function(e){
+
+                if(e.key === "Escape"){
+                    closeModal();
+                }
+
+            });
+
+        }
+
+    }, 2000);
+
+});
+
+</script>
+
+    <?php
+        $query = "SELECT * FROM modals WHERE is_enabled = 1 ORDER BY id DESC LIMIT 1";
+        $result = mysqli_query($conn, $query);
+
+        if ($result && mysqli_num_rows($result) > 0) {
+
+            $modal = mysqli_fetch_assoc($result);
+        ?>
+
+        <div id="customModalOverlay" class="custom-modal-overlay">
+
+            <div class="custom-modal-box">
+
+                <button class="custom-modal-close" id="modalCloseBtn">
+                    &times;
+                </button>
+
+                <div class="custom-modal-header">
+                    <h2><?php echo htmlspecialchars($modal['modal_title']); ?></h2>
+                </div>
+
+                <div class="custom-modal-body">
+                    <?php echo html_entity_decode($modal['modal_content']); ?>
+                    
+                </div>
+
+                <div class="custom-modal-footer">
+                    <button id="modalFooterBtn">
+                        <?php echo htmlspecialchars($modal['footer_text']); ?>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+<?php } ?>
 
 </body>
 
