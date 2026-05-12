@@ -115,3 +115,26 @@ CREATE TABLE IF NOT EXISTS modals (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+-- Create internship_programmes table
+CREATE TABLE `internship_programmes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) NOT NULL,
+  `status` enum('open','closed') DEFAULT 'open',
+  `last_date` date NOT NULL,
+  `duration` enum('six_months','two_months','three_months','one_year') DEFAULT 'six_months',
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Create internship_documents table for multiple documents
+CREATE TABLE `internship_documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `internship_id` int(11) NOT NULL,
+  `doc_title` varchar(255) NOT NULL,
+  `doc_file` varchar(500) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `internship_id` (`internship_id`),
+  CONSTRAINT `internship_documents_ibfk_1` FOREIGN KEY (`internship_id`) REFERENCES `internship_programmes` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

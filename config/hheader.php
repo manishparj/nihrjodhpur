@@ -114,8 +114,8 @@
       <li>
         <a href="#" role="button">अकादमिक<i class="fa fa-chevron-down caret"></i></a>
         <ul class="dropdown">
-          <li><a href="#">पीएचडी</a></li>
-          <li><a href="#">Dissertation</a></li>
+          <li><a href="#">पीएचडी (AcSIR)</a></li>
+          <li><a href="internship.php">Internship/Dissertation</a></li>
         </ul>
       </li>
 

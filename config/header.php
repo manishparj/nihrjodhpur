@@ -115,8 +115,8 @@
       <li>
         <a href="#" role="button">Academic <i class="fa fa-chevron-down caret"></i></a>
         <ul class="dropdown">
-          <li><a href="#">PhD</a></li>
-          <li><a href="#">Dissertation</a></li>
+          <li><a href="#">PhD (AcSIR)</a></li>
+          <li><a href="Internship.php">Internship/Dissertation</a></li>
         </ul>
       </li>
 

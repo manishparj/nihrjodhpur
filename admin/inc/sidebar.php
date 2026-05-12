@@ -116,6 +116,19 @@
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInternship" aria-expanded="true" aria-controls="collapseInternship">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Internship-Manage</span>
+                </a>
+                <div id="collapseInternship" class="collapse" aria-labelledby="headingInternship" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="admin-internship.php">Internship</a>
+                    </div>
+                </div>
+            </li>
+
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDirector" aria-expanded="true" aria-controls="collapseCommittee">
                     <i class="fas fa-fw fa-folder"></i>
