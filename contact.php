@@ -184,7 +184,7 @@ error_reporting(0);
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
-                                <h2>Contact us</h2>
+                                <h2>Get in Touch With Us</h2>
                             </div>
                         </div>
                     </div>
@@ -194,97 +194,200 @@ error_reporting(0);
 
         <!-- slider Area End-->
         <!-- ================ contact section start ================= -->
-        <section class="contact-section">
-            <div class="container">
-                <div class="d-none d-sm-block mb-5 pb-4">
-                    <div style="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4255.999377738954!2d73.0276054281912!3d26.23391291055097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b8f0bc41b59%3A0x452d769037ea5042!2sNational%20Institute%20for%20Implementation%20Research%20on%20Non-Communicable%20Diseases!5e0!3m2!1sen!2sin!4v1622014051415!5m2!1sen!2sin" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="contact-title">Get in Touch</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
-                        <div id="responseMessage"></div>
-                        <form class="form-contact contact_form" id="contactForm" method="post" autocomplete="off">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for="">Message (max 250 characters):</label>
-                                        <textarea class="form-control w-100" name="message" id="message" rows="4" cols="50" maxlength="250" placeholder=" Enter Message" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">Name</label>
-                                        <input class="form-control" name="name" id="name" type="text" placeholder='Enter your name' placeholder="Enter your name" required>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label for="">Email</label>
-                                        <input class="form-control" name="email" id="email" type="email" placeholder='Enter email address' required>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label for="">Mobile</label>
-                                        <input class="form-control" id="subject" name="subject" type="tel" pattern="[0-9]{10}" placeholder="Enter Mobile No." required>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label>Enter Captcha:</label>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <!-- <input type="text" class="form-control" readonly id="capt"> -->
-                                                <img id="captcha-image" src="generate_captcha.php" alt="CAPTCHA Image">
-                                                <input type="button" value="Refresh CAPTCHA" onclick="refreshCaptcha();">
+     <section class="contact-section py-5 bg-light">
+    <div class="container">
 
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <!-- <input class="form-control" type="text" id="captcha" name="captcha" required> -->
-                                                <input class="form-control" type="text" id="captcha" name="captcha" required>
+        <!-- Heading -->
+        <div class="row mb-4">
+            <div class="col-lg-12 text-center">
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <p class="text-muted mx-auto"
+                   style="max-width:750px; line-height:1.8; font-size:16px;">
 
-                                <div class="form-group mt-3">
-                                    <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                                </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3>Address</h3>
-                            <p>New Pali Road, Jodhpur 342005, INDIA</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>Tel.: +91-291-2722403</h3>
-                            <p>Mon to Fri 9am to 5:30 pm</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                            <h3>prc[dot]niirncd[at]icmr[dot]gov[dot]in</h3>
-                        </div>
-                    </div>
-                </div>
+                    We are committed to advancing public health research and innovation.
+                    Reach out to us for institutional communication, collaborations, and inquiries.
+
+                </p>
+
             </div>
+        </div>
+
+        <!-- Main Row -->
+        <div class="row">
+
+            <!-- LEFT SIDE MAP -->
+            <div class="col-lg-7 mb-4">
+
+                <div class="bg-white shadow-sm h-100"
+                     style="border-radius:15px; overflow:hidden; border:1px solid #e9ecef;">
+
+                    <div class="p-3 border-bottom text-white" style="background:#003679;">
+
+                        <h5 class="mb-0 font-weight-bold">
+                            <i class="ti-location-pin mr-2"></i>
+                            Institute Location
+                        </h5>
+
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4255.999377738954!2d73.0276054281912!3d26.23391291055097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418b8f0bc41b59%3A0x452d769037ea5042!2sNational%20Institute%20for%20Implementation%20Research%20on%20Non-Communicable%20Diseases!5e0!3m2!1sen!2sin!4v1622014051415!5m2!1sen!2sin"
+                        width="100%"
+                        height="550"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
             </div>
-        </section>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-lg-5">
+
+                <!-- Address -->
+                <div class="bg-white shadow-sm mb-4"
+                     style="border-radius:15px; border:1px solid #e9ecef;">
+
+                    <div class="p-3 border-bottom"
+                         style="background:#f8f9fa;">
+
+                        <h5 class="mb-0 font-weight-bold text-dark">
+                            <i class="ti-home text-primary mr-2"></i>
+                            Address
+                        </h5>
+
+                    </div>
+
+                    <div class="p-4">
+
+                        <p class="text-muted mb-0"
+                           style="line-height:2; font-size:15px;">
+
+                            <strong class="text-dark">
+                                ICMR-National Institute of Health Research
+                            </strong><br>
+
+                            Formerly: NIIRNCD & DMRC<br>
+
+                            Indian Council of Medical Research<br>
+
+                            Department of Health Research<br>
+
+                            Ministry of Health & Family Welfare<br>
+
+                            New Pali Road, Jodhpur<br>
+
+                            Rajasthan - 342005, INDIA
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-white shadow-sm"
+                     style="border-radius:15px; border:1px solid #e9ecef;">
+
+                    <div class="p-3 border-bottom"
+                         style="background:#f8f9fa;">
+
+                        <h5 class="mb-0 font-weight-bold text-dark">
+                            <i class="ti-headphone-alt text-success mr-2"></i>
+                            Contact Information
+                        </h5>
+
+                    </div>
+
+                    <div class="p-4">
+
+                        <!-- Phone -->
+                        <div class="d-flex mb-4">
+
+                            <div class="mr-3">
+
+                                <div class="d-flex align-items-center justify-content-center"
+                                     style="width:55px;
+                                            height:55px;
+                                            border-radius:50%;
+                                            background:#28a745;
+                                            color:#fff;
+                                            font-size:22px;">
+
+                                    <i class="ti-mobile"></i>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <h6 class="font-weight-bold mb-1">
+                                    Phone Number
+                                </h6>
+
+                                <p class="mb-1 text-dark">
+                                    +91-291-2722403
+                                </p>
+
+                                <small class="text-muted">
+                                    Monday to Friday | 9:00 AM – 5:30 PM
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <!-- Email -->
+                        <div class="d-flex mt-4">
+
+                            <div class="mr-3">
+
+                                <div class="d-flex align-items-center justify-content-center"
+                                     style="width:55px;
+                                            height:55px;
+                                            border-radius:50%;
+                                            background:#dc3545;
+                                            color:#fff;
+                                            font-size:22px;">
+
+                                    <i class="ti-email"></i>
+
+                                </div>
+
+                            </div>
+
+                            <div>
+
+                                <h6 class="font-weight-bold mb-1">
+                                    Email Address
+                                </h6>
+
+                                <p class="mb-0 text-muted"
+                                   style="word-break:break-word;">
+
+                                    prc[dot]niirncd[at]icmr[dot]gov[dot]in
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
         <!-- ================ contact section end ================= -->
     </main>
     <footer>

@@ -23,8 +23,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$final_file = str_replace(' ', '-', $new_file_name);
 
 
-		$new_title = strtolower($title);
-		$final_title = str_replace(' ', '-', $new_title);
+		$final_title = trim($title);
 	
 		if (move_uploaded_file($file_loc, $folder . $final_file)) {
 			$doc_main = $final_file;
