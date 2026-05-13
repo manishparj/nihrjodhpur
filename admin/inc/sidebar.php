@@ -128,6 +128,18 @@
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhD" aria-expanded="true" aria-controls="collapsePhD">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>PhD-Manage</span>
+                </a>
+                <div id="collapsePhD" class="collapse" aria-labelledby="headingPhD" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="admin-phd.php">PhD</a>
+                    </div>
+                </div>
+            </li>
 
              <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDirector" aria-expanded="true" aria-controls="collapseCommittee">

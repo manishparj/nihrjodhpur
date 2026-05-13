@@ -135,8 +135,8 @@ while ($row = $committeeQuery->fetch_assoc()) {
         foreach ($committees as $committee) {
             $total_all_members += count($committee['members']);
         }
+        krsort($committees);
         ?>
-        
         <?php foreach ($committees as $id => $committee): 
             $member_count = count($committee['members']);
         ?>

@@ -138,3 +138,27 @@ CREATE TABLE `internship_documents` (
   KEY `internship_id` (`internship_id`),
   CONSTRAINT `internship_documents_ibfk_1` FOREIGN KEY (`internship_id`) REFERENCES `internship_programmes` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Create phd_programmes table
+CREATE TABLE `phd_programmes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `programme_name` varchar(255) NOT NULL,
+  `session` varchar(100) NOT NULL,
+  `status` enum('open','closed') DEFAULT 'open',
+  `last_date` date NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Create phd_documents table for multiple documents
+CREATE TABLE `phd_documents` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `phd_programme_id` int(11) NOT NULL,
+  `doc_title` varchar(255) NOT NULL,
+  `doc_file` varchar(500) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `phd_programme_id` (`phd_programme_id`),
+  CONSTRAINT `phd_documents_ibfk_1` FOREIGN KEY (`phd_programme_id`) REFERENCES `phd_programmes` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
