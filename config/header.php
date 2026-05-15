@@ -116,7 +116,7 @@
         <a href="#" role="button">Academic <i class="fa fa-chevron-down caret"></i></a>
         <ul class="dropdown">
           <li><a href="phd.php">PhD (AcSIR)</a></li>
-          <li><a href="internship.php">Internship/Dissertation</a></li>
+          <li><a href="Internship.php">Internship/Dissertation</a></li>
         </ul>
       </li>
 
@@ -141,6 +141,7 @@
           <li><a href="viewform.php">Forms</a></li>
           <li><a href="viewcircular.php">Circular</a></li>
           <li><a href="https://niirncd.org/vehicle_app/" target="_blank">Vehicle Application</a></li>
+          <li><a href="https://dmrcjodhpur.attendance.gov.in/" target="_blank">Attendance Panel</a></li>
         </ul>
       </li>
 

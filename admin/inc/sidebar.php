@@ -128,6 +128,20 @@
                     </div>
                 </div>
             </li>
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Slider-Manage</span>
+                </a>
+                <div id="collapseSlider" class="collapse" aria-labelledby="headingSlider" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="admin-slider.php">Slider</a>
+                    </div>
+                </div>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhD" aria-expanded="true" aria-controls="collapsePhD">
                     <i class="fas fa-fw fa-folder"></i>

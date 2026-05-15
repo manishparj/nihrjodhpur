@@ -269,8 +269,6 @@ error_reporting(0);
                                 ICMR-National Institute of Health Research
                             </strong><br>
 
-                            Formerly: NIIRNCD & DMRC<br>
-
                             Indian Council of Medical Research<br>
 
                             Department of Health Research<br>

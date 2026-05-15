@@ -115,7 +115,7 @@
         <a href="#" role="button">अकादमिक<i class="fa fa-chevron-down caret"></i></a>
         <ul class="dropdown">
           <li><a href="phd.php">पीएचडी (AcSIR)</a></li>
-          <li><a href="internship.php">Internship/Dissertation</a></li>
+          <li><a href="Internship.php">Internship/Dissertation</a></li>
         </ul>
       </li>
 
@@ -140,6 +140,7 @@
           <li><a href="hviewform.php">प्रपत्र</a></li>
           <li><a href="hviewcircular.php">परिपत्र</a></li>
           <li><a href="https://niirncd.org/vehicle_app/" target="_blank">वाहन आवेदन</a></li>
+          <li><a href="https://dmrcjodhpur.attendance.gov.in/" target="_blank">Attendance Panel</a></li>
         </ul>
       </li>
 

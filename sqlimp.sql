@@ -162,3 +162,21 @@ CREATE TABLE `phd_documents` (
   KEY `phd_programme_id` (`phd_programme_id`),
   CONSTRAINT `phd_documents_ibfk_1` FOREIGN KEY (`phd_programme_id`) REFERENCES `phd_programmes` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE IF NOT EXISTS carousel_galleries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    subtitle TEXT,
+    cover_photo VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE IF NOT EXISTS carousel_items (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    gallery_id INT NOT NULL,
+    image_url VARCHAR(255) NOT NULL,
+    caption TEXT,
+    display_order INT DEFAULT 0,
+    FOREIGN KEY (gallery_id) REFERENCES carousel_galleries(id) ON DELETE CASCADE
+)
