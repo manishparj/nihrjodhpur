@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Include database configuration
-include('./config/config.php');
+include('config/config.php');
 
 // Set JSON header
 header('Content-Type: application/json');

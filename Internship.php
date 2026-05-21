@@ -92,25 +92,15 @@ function getDisplayStatus($status, $last_date) {
             <section class="internship-section py-3">
                 <div class="container">
 
-                    <!-- Heading -->
-                    <div class="text-center mb-4">
-                        <p class="subtitle">
-                            ICMR-NIHR, Jodhpur invites applications from eligible postgraduate students for Dissertation / Internship Training for a period of 2 months & 6 months. This program provides structured research exposure in the field of Non-Communicable Diseases, Public Health, Epidemiology, Implementation Research, Biostatistics, Laboratory Sciences, Nutrition, Social & Behavioral Sciences, and Biomedical Research.
-                        </p>
-                    </div>
-
                     <!-- About Institute -->
                     <div class="card custom-card mb-4 border-0">
                         <div class="card-body">
                             <div class="section-heading">
                                 <i class="fas fa-hospital-alt"></i>
-                                <h3>About Institute</h3>
+                                <h3>Basic Details</h3>
                             </div>
                             <p>
-                                The National Institute for Health Research (NIHR), located in Jodhpur, was originally established on 27 June 1984 as the Desert Medicine Research Centre (DMRC). It was later renamed the National Institute for Implementation Research on Non-Communicable Diseases (NIIRNCD) on 7 December 2019, and redesignated as NIHR on 29 April 2026.
-                            </p>
-                            <p>
-                                The Institute houses state-of-the-art facilities for conducting basic laboratory-based research in Biotechnology, microbiology, biochemistry, and Virology. It is also actively strengthening its capacity and workforce to advance implementation research in non-communicable diseases (NCDs).
+                                ICMR-NIHR, Jodhpur invites applications from eligible postgraduate students for Dissertation / Internship Training for a period of 2 months & 6 months. This program provides structured research exposure in the field of Non-Communicable Diseases, Public Health, Epidemiology, Implementation Research, Biostatistics, Laboratory Sciences, Nutrition, Social & Behavioral Sciences, and Biomedical Research.
                             </p>
                         </div>
                     </div>
@@ -465,6 +455,10 @@ function getDisplayStatus($status, $last_date) {
                         <p class="mb-0">
                             <i class="fas fa-envelope"></i>
                             academic-niirncd@icmr.gov.in
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-phone"></i>
+                            0291-2729739
                         </p>
                     </div>
 

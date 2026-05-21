@@ -91,33 +91,22 @@ function getDisplayStatus($status, $last_date) {
             <section class="internship-section py-3">
                 <div class="container">
 
-                    <!-- Heading -->
-                    <div class="text-center mb-4">
-                        <p class="subtitle">
-                            AcSIR offers fully funded opportunities to its Ph.D students to pursue a part
-                            of their doctoral research for up to one year at top-tier international
-                            universities under the Joint Ph.D Degree (Cotutelle) Program.
-                        </p>
-                        <p class="subtitle">
-                        AcSIR is the largest academic institution for doctoral research in India,
-                        having awarded 958 Ph.D degrees in 2025 under STEM, with more than
-                        7,000 students currently registered in its Ph.D programs.
-                        </p>
-
-                    </div>
-
                     <!-- About Institute -->
                     <div class="card custom-card mb-4 border-0">
                         <div class="card-body">
                             <div class="section-heading">
                                 <i class="fas fa-hospital-alt"></i>
-                                <h3>About Institute</h3>
+                                <h3>Basic Details</h3>
                             </div>
                             <p>
-                                The National Institute for Health Research (NIHR), located in Jodhpur, was originally established on 27 June 1984 as the Desert Medicine Research Centre (DMRC). It was later renamed the National Institute for Implementation Research on Non-Communicable Diseases (NIIRNCD) on 7 December 2019, and redesignated as NIHR on 29 April 2026.
+                                AcSIR offers fully funded opportunities to its Ph.D students to pursue a part
+                            of their doctoral research for up to one year at top-tier international
+                            universities under the Joint Ph.D Degree (Cotutelle) Program.
                             </p>
                             <p>
-                                The Institute houses state-of-the-art facilities for conducting basic laboratory-based research in Biotechnology, microbiology, biochemistry, and Virology. It is also actively strengthening its capacity and workforce to advance implementation research in non-communicable diseases (NCDs).
+                                AcSIR is the largest academic institution for doctoral research in India,
+                        having awarded 958 Ph.D degrees in 2025 under STEM, with more than
+                        7,000 students currently registered in its Ph.D programs.
                             </p>
                         </div>
                     </div>
@@ -309,6 +298,10 @@ function getDisplayStatus($status, $last_date) {
                         <p class="mb-0">
                             <i class="fas fa-envelope"></i>
                             rameshk.h@icmr.gov.in
+                        </p>
+                         <p class="mb-0">
+                            <i class="fas fa-phone"></i>
+                            0291-2729730
                         </p>
                     </div>
 

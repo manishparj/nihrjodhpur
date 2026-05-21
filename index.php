@@ -101,7 +101,7 @@ if ($director_info) {
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
+            <div class="preloader-img pere-text" style="left: 20% !important;">
                 <img src="assets/img/logo/loaderlogo.jpg" alt="Loading">
             </div>
         </div>
@@ -620,7 +620,7 @@ if ($director_info) {
                         'url'   => 'https://www.icmr.gov.in/icmr-leadership#ICMRDirector',
                     ],
                     [
-                        'name'  => 'Prof. (Dr.) Pankaj Bhardwaj',
+                        'name'  => 'Dr. Pankaj Bhardwaj',
                         'title' => 'Director, ICMR-National Institute of Health Research, Jodhpur',
                         'img'   => 'admin/img/our_team/director/drpankaj.png',
                         'url'   => 'https://niirncd.icmr.org.in/about-director.php',
