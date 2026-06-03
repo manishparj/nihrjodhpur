@@ -130,6 +130,34 @@
             </li>
 
              <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseScientist" aria-expanded="true" aria-controls="collapseScientist">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Scientist-Manage</span>
+                </a>
+                <div id="collapseScientist" class="collapse" aria-labelledby="headingScientist" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="scientist-register.php">Register Scientist</a>
+                    </div>
+                </div>
+            </li>
+
+             <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNodal" aria-expanded="true" aria-controls="collapseNodal">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Nodal-Manage</span>
+                </a>
+                <div id="collapseNodal" class="collapse" aria-labelledby="headingNodal" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Name:</h6>
+                        <a class="collapse-item" href="nodal_officer.php">Register Nodal</a>
+                    </div>
+                </div>
+            </li>
+
+            
+
+             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSlider" aria-expanded="true" aria-controls="collapseSlider">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Slider-Manage</span>
